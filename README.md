@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Next.js Crud Api
 
-First, run the development server:
+How to make Apis in Next.js using route handlers
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+
+## API Reference
+
+#### Get all users
+
+```http
+  GET /api/user
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Get a user
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```http
+  GET /api/user/${id}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of user to fetch |
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage/Examples
 
-## Deploy on Vercel
+```javascript
+export async function DELETE(req:Request,context:any){
+    const id=context.params.id
+  await fetch(`${url}/${id}`,{
+      method:'DELETE',
+      headers:{
+          'Content-Type':"application/json"
+      }
+    })
+  
+      return NextResponse.json({message:'user has been deleted'})
+  }
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/imarjunshrma/next.js_crud_api.git
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## 🛠 Skills
+React,Node,Angular,React Native,Prisma,db,C,C++...
+
+
+## 🚀 About Me
+I'm a full stack developer...
+
