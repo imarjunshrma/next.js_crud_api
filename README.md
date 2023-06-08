@@ -15,8 +15,8 @@ How to make Apis in Next.js using route handlers
 
 #### Get a user
 
-```http
-  /api/user/${id}
+```https
+  GET /api/user/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -24,7 +24,24 @@ How to make Apis in Next.js using route handlers
 | `id`      | `string` | **Required**. Id of user to fetch |
 
 
+#### Create New User
 
+```https
+  POST /api/user
+```
+
+#### Update New User
+
+```https
+  PUT /api/user
+```
+
+
+#### Delete New User
+
+```https
+  Delete /api/user
+```
 
 ## Usage/Examples
 
