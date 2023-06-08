@@ -10,13 +10,13 @@ How to make Apis in Next.js using route handlers
 #### Get all users
 
 ```http
-  GET /api/user
+   /api/user
 ```
 
 #### Get a user
 
 ```http
-  GET /api/user/${id}
+  /api/user/${id}
 ```
 
 | Parameter | Type     | Description                       |
