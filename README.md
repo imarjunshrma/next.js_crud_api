@@ -9,8 +9,8 @@ How to make Apis in Next.js using route handlers
 
 #### Get all users
 
-```http
-   /api/user
+```https
+  GET /api/user
 ```
 
 #### Get a user
