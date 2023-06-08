@@ -33,15 +33,21 @@ How to make Apis in Next.js using route handlers
 #### Update New User
 
 ```https
-  PUT /api/user
+  PUT /api/user/id
 ```
-
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of user to fetch |
 
 #### Delete New User
 
 ```https
-  Delete /api/user
+  Delete /api/user/id
 ```
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of user to fetch |
+
 
 ## Usage/Examples
 
